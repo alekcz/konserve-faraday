@@ -1,27 +1,18 @@
 # konserve-faraday
 
-This is a starter template it give basic guide lines on how to build a konserve backend.   
-The source code is heavily annotated so go check it out. 
+A [DynamoDB](https://aws.amazon.com/dynamodb/) backend for [konserve](https://github.com/replikativ/konserve-carmine) implemented with [faraday](https://github.com/Taoensso/faraday).
 
-It's important to have a solid foundation when building a library. To help you keep your quality up you can run
-- `lein test` to test your code
-- `lein cloverage` to see the coverage of your tests. 
-
-A github action has been provided to get you going. 
+The purpose of konserve is to have a unified associative key-value interface for edn datastructures and binary blobs. Use the standard interface functions of konserve.
 
 # Status
 
 ![master](https://github.com/alekcz/konserve-faraday/workflows/master/badge.svg) [![codecov](https://codecov.io/gh/alekcz/konserve-faraday/branch/master/graph/badge.svg)](https://codecov.io/gh/alekcz/konserve-faraday) 
 
-## Prerequisites
-
-List any prerequisites for setting up you backend. 
-
 ## Usage
 
 _Link to the your lib on clojars_
 
-`[your/store "x.y.z"]`
+`[alekcz/store "0.1.0-SNAPSHOT"]`
 
 ```clojure
 (require '[konserve-faraday.core :refer :all]
