@@ -1,4 +1,4 @@
-# konserve-template
+# konserve-faraday
 
 This is a starter template it give basic guide lines on how to build a konserve backend.   
 The source code is heavily annotated so go check it out. 
@@ -11,7 +11,7 @@ A github action has been provided to get you going.
 
 # Status
 
-![master](https://github.com/alekcz/konserve-template/workflows/master/badge.svg) [![codecov](https://codecov.io/gh/alekcz/konserve-template/branch/master/graph/badge.svg)](https://codecov.io/gh/alekcz/konserve-template) 
+![master](https://github.com/alekcz/konserve-faraday/workflows/master/badge.svg) [![codecov](https://codecov.io/gh/alekcz/konserve-faraday/branch/master/graph/badge.svg)](https://codecov.io/gh/alekcz/konserve-faraday) 
 
 ## Prerequisites
 
@@ -24,11 +24,11 @@ _Link to the your lib on clojars_
 `[your/store "x.y.z"]`
 
 ```clojure
-(require '[konserve-yourstore.core :refer :all]
+(require '[konserve-faraday.core :refer :all]
          '[clojure.core.async :refer [<!!] :as async]
          '[konserve.core :as k])
   
-  (def your-store (<!! (new-your-store connection-uri :other-config "info" :and-more :yay)))
+  (def your-store (<!! (new-faraday-store connection-uri :other-config "info" :and-more :yay)))
 
   (<!! (k/exists? your-store  "cecilia"))
   (<!! (k/get-in your-store ["cecilia"]))
@@ -43,7 +43,7 @@ _Link to the your lib on clojars_
 
 ## License
 
-Copyright © 2020 Your name
+Copyright © 2020 Alexander Oloo
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
